@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="g.css ">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Assistant:600" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <div class="logo">
+                AssembleCUBE
+            </div>
+            <nav class="nav_hader">
+                                <object onclick="kok()" class="manu"
+                type="image/svg+xml"
+                data="static/menu.svg">
+
+                </object>
+                <ul class="ul">
+                    <li class="li_s"><a href="" class="buttons_header"> статистика </a></li>
+                    <li class="li_s"><a href="/login" class="buttons_header"> войти </a></li>
+                    <li class="li_s"><a href="/signup" class="buttons_header"> регистрация </a></li>
+                </ul>
+
+            </nav>
+        </header>
+            <div class="grid">
+
+                <div class="objects2d">
+
+                        <canvas></canvas>
+
+                </div>
+            </div>
+            <div class="formuls">
+                <div>
+                    <div>L</div><div>U</div>
+                    <div>L'</div><div>F</div>
+                    <div>D</div><div>B</div>
+                 </div>
+                <div>
+                    <div>U'</div><div>R</div>
+                    <div>F</div><div>R'</div>
+                    <div>D</div><div>B</div>
+                </div>
+
+
+            </div>
+                <div class="c">
+                    <div class="box" id="record"><p>СДЕЛАТЬ РЕКОРД</p></div>
+                    <div class="box"><p>теория</p>    </div>
+                    <div class="box"><p>таблица лидеров </p> </div>
+
+                <div class="inner"></div></div>
+    </div>
+
+
+		<script>
+            window.onload = function(){
+                var list_of_li_s              = document.querySelectorAll('header > nav > ul > .li_s');
+                first_li                      = 0;
+                console.log(list_of_li_s )
+                for (var i = 0; i<list_of_li_s.length ; i++){
+                    name_id_li                = 'name'+first_li;
+
+                    list_of_li_s[i].setAttribute('id' ,name_id_li );
+                    first_li++
+                };
+            }
+
+        </script>
+        <script>
+
+
+        </script>
+    <script src="js.js"> </script>
+
+</body>
+</html>
